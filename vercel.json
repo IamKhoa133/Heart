@@ -1,27 +1,5 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "src/Heart.js",
-        "use": "@vercel/node"
-      },
-      {
-        "src": "src/Heartlove.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/heart/(.*)",
-        "dest": "src/Heart.js"
-      },
-      {
-        "src": "/heartlove/(.*)",
-        "dest": "src/Heartlove.js"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/"
-      }
+    "rewrites": [
+        {"source": "/(.*)", "destination": "/"}
     ]
-  }
+}
