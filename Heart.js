@@ -5,7 +5,7 @@ var ctx = canvas.getContext('2d');
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 
-var texts = 'Angle'.split('');
+var texts = 'HANG'.split('');
 
 var fontSize = 16;
 var columns = canvas.width / fontSize;
